@@ -19,6 +19,14 @@
 - Use option, CMD, C to open the developer console or use live-server to make sure moduels still work
 - Manually reaches out to the DOM (Document Object Model) (What is header, what isn't and what comes under that etc)
 
+### Section 3 React Basics & Components
+- React simplifies the process of building complex interfaces
+- React is all about components
+- All user interfaces are made up of components
+- Each compoenent has a different focus to keep the codebase managable
+- Components combine HTML, CSS and Javscript (CSS less important)
+- Declarative approach -> you define the desired end state rather than exact locations of items (React figures out where elements ned to be added, removed or modified)
+
 
 
 #### Key commands 

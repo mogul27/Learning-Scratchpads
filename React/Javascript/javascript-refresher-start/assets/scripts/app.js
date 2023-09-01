@@ -77,3 +77,57 @@ console.log(user1)
 // Arrays (Special type of object)
 const hobbies = ["Sports", "Programming", "Reading"]
 console.log(hobbies[1]);
+
+// Array utlities
+hobbies.push("Running")
+console.log(hobbies)
+const index = hobbies.findIndex((item) => item === "Sports");
+console.log(index)
+
+// Transform every item in an array to another item
+console.log(hobbies.map((item) => ({text: item+"2"})));
+
+// Destructuring
+const [firstname, lastname] = ["Mogul", "Burton"];
+// ===
+// const firstName = userNameData[0];
+// const lastName  = userLastNamedata[1]
+
+// curly on left for destructuring
+const {name: nickName, age} = { 
+    name: "Mogul",
+    age: "26",
+}
+
+console.log(nickName)
+
+// spread operator
+
+const newHobbies = ["Coding"]
+
+/// Pulls out items from earlier list into comma seperated list
+const mergedHobbies = [...hobbies, ...newHobbies]
+
+const superUser = {
+    isAdmin: true,
+    ...user
+}
+
+const password = prompt('Your password');
+
+/// Control structures
+if (password === "Hello") {    
+} else if (password === "hello") {
+    console.log("Lower case still works")    
+}  else {
+    console.log("Access Blocked")
+}
+
+const names = ["Chris", "Mogul"]
+
+// Iterate over name making each item iteration a variable called name
+for (const name of names) {
+    console.log(name)
+}
+
+

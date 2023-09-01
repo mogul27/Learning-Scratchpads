@@ -21,12 +21,25 @@
 
 ### Section 3 React Basics & Components
 - React simplifies the process of building complex interfaces
+- React is developer-friendly code that gets transformed behind the scenes to run in the browser
 - React is all about components
 - All user interfaces are made up of components
 - Each compoenent has a different focus to keep the codebase managable
 - Components combine HTML, CSS and Javscript (CSS less important)
 - Declarative approach -> you define the desired end state rather than exact locations of items (React figures out where elements ned to be added, removed or modified)
 
+- React code is just Javascript code
+- Index page always executed initially
+- JSX = Javascript + XML (Since HTML is a type of XML)
+- Developer console -> Source shows you where the code on the page came from
+- Considered good practice to put new components into new files so you have 1 component per file
+- App is a special component so not in the components file (It is root component rendered in index)
+- In React you build a component tree
+- File naming convention is camel case (Cap on each new work)
+- A component in React is just a Javascript function
+- Import custom components into App.js rather than into index
+- Custom components need an upper case letter at the start
+- Need 1 root component per JSX component (i.e a master set of div tags which any other div tags come under)
 
 
 #### Key commands 

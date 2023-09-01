@@ -121,13 +121,39 @@ if (password === "Hello") {
     console.log("Lower case still works")    
 }  else {
     console.log("Access Blocked")
-}
+};
 
 const names = ["Chris", "Mogul"]
 
 // Iterate over name making each item iteration a variable called name
 for (const name of names) {
     console.log(name)
+};
+
+// Passing functions as values
+
+function handleTimeout() {
+    console.log("Timed out!")
+};
+
+// Constant that contains an anonymous function
+const handleTimeout2 = () => {
+    console.log("Timed out again")
+};
+
+setTimeout(handleTimeout, 2000);
+
+// Fucntion that calls a function
+function greeter(greetFunc) {
+    greetFunc();
 }
 
+greeter(() => console.log("Hi"));
+
+// Defining function inside of functions
+// functions defined inside functions can only be execute inside of the functions (Locally scoped)
+
+// Primitives (let) can't be edited (overwritten but not edited)
+// Objects are a reference because the point to memory adress so the array can be changed
+// For primitives the string itself is stored in the array
 

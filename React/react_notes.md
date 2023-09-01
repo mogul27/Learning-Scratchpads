@@ -14,5 +14,5 @@
 
 
 #### Key commands 
-*npm install* gets the libraries and dependencies needed
+*npm install* gets the libraries and dependencies needed\
 *npx create-react-app "project name"* to cerate a new react app

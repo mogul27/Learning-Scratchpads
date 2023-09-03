@@ -40,7 +40,11 @@
 - Import custom components into App.js rather than into index
 - Custom components need an upper case letter at the start
 - Need 1 root component per JSX component (i.e a master set of div tags which any other div tags come under)
-
+- Components are good for both seperation of concerns and 
+  also the reusability.
+- Props are like attributes. They allow you to pass data through 
+  a kindof custom HTML component (properties of the custom compoenents)
+- Props can share data between React Components
 
 #### Key commands 
 *npm install* gets the libraries and dependencies needed\

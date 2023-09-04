@@ -45,7 +45,9 @@
 - Props are like attributes. They allow you to pass data through 
   a kindof custom HTML component (properties of the custom compoenents)
 - Props can share data between React Components
+- Props always passed from component through a component tree to child   components, never straight to the child component
 
 #### Key commands 
 *npm install* gets the libraries and dependencies needed\
 *npx create-react-app "project name"* to cerate a new react app
+*npm start* Default to use react-script for starting development server

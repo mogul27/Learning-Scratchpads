@@ -47,6 +47,15 @@
 - Props can share data between React Components
 - Props always passed from component through a component tree to child   components, never straight to the child component
 
+#### Section 4 Tasks
+1. In App output the key concepts
+2. Identify components that could be created from main blob
+3. Create an use the custom components
+
+#### Section 5
+- State allows you to react to clicks ad make the website interactive
+
+
 #### Key commands 
 *npm install* gets the libraries and dependencies needed\
 *npx create-react-app "project name"* to cerate a new react app

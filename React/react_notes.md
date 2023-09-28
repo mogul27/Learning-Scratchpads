@@ -54,6 +54,12 @@
 
 #### Section 5
 - State allows you to react to clicks ad make the website interactive
+- onClick adds an event listener to an elemtn such as a button
+- All eventhandler props want a function as a value (For onClick etc)
+- React moves through the component tree to read functions and load the page
+- But React never reloads these again
+- Key Concept = State
+- State tells React when to redraw the screen when something changes
 
 
 #### Key commands 

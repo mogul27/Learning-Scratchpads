@@ -25,6 +25,8 @@ function ExpenseItem(props) {
   // Argument is initial state
   useState(props.title);
 
+  //useState tells react to manage that variable for us
+
   const clickHandler = () => {
     // This causes react to redraw the screen
     setTitle('Updated!');

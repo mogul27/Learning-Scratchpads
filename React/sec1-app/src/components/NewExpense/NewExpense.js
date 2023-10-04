@@ -2,7 +2,7 @@ import ExpenseForm from './ExpenseForm'
 import './NewExpense.css'
 
 const NewExpense = (props) => {
-  const onSaveExpenseDataHandler = (enteredExpenseData) => {
+  const saveExpenseDataHandler = (enteredExpenseData) => {
     const expenseData = {
       // Means to unpack the values inside
       ...enteredExpenseData,
@@ -17,7 +17,7 @@ const NewExpense = (props) => {
     <div className='new-expense'>
       {/* Use on because we're going to have a function for the prop to define 
       behaviour when something happens */}
-      <ExpenseForm onSaveExpenseData={onSaveExpenseDataHandler}/>
+      <ExpenseForm onSaveExpenseData={saveExpenseDataHandler}/>
     </div>
   );
 };

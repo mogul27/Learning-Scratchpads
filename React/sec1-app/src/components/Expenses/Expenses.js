@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import ExpenseItem from "./ExpenseItem";
+import ExpensesList from "./ExpensesList";
 import Card from "../UI/Card";
 import ExpensesFilter from "./ExpenseFilter";
 import "./Expenses.css";
@@ -12,6 +12,11 @@ const Expenses = (props) => {
     setFilteredYear(selectedYear);
   };
 
+  // Define function insdie the arrow notation
+  const filteredExpenses = props.items.filter(expense => {
+    return expense.date.toString().includes(filteredYear);
+  });
+
   return (
     <div>
       <Card className="expenses">
@@ -19,22 +24,13 @@ const Expenses = (props) => {
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
-        {/* Can add special "key" prop to any item 
-        This is why we add ID*/}
-        {console.log()}
-        {props.items
-          .filter((item) => item.date.toString().includes(filteredYear))
-          .map((expense) => (
-            <ExpenseItem
-              key={expense.id}
-              title={expense.title}
-              amount={expense.amount}
-              date={expense.date}
-            />
-          ))}
+        <ExpensesList items={filteredExpenses}/>
       </Card>
     </div>
   );
 };
 
 export default Expenses;
+
+
+        

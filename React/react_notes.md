@@ -61,8 +61,56 @@
 - Key Concept = State
 - State tells React when to redraw the screen when something changes
 
+  // Use state is a React hook (Begin with use)
+  // Must be called within component functions
+  // NOT nested within
+  // Use State creates a special vairable that when changed
+  // causes React to re-evaluate the component
+  // Argument is initial state
+  //useState tells react to manage that variable for us
+
+  Presentational component = just to render some data, not to manage any state.
+  Stateful component or "smart" component = actively manages state
 
 #### Key commands 
 *npm install* gets the libraries and dependencies needed\
 *npx create-react-app "project name"* to cerate a new react app
 *npm start* Default to use react-script for starting development server
+
+#### Removed commented code
+
+  //use State returns an array that contains two elements
+  // 1. Variable itself
+  // 2. func to assigning new value to the variable
+  const [title, setTitle] = useState(props.title)
+
+  const clickHandler = () => {
+    // This causes react to redraw the screen
+    setTitle('Updated!');
+  };
+  // Add Javascript code to function containing HTML
+  // Data is date object so can't be put in as a string
+  // Use curly braces for parameters or Javascript expression
+
+  // In React we can use DOM events for any HTML element
+
+        {/* ? Is the Javascript ternary (if) so below is conditional
+        rendering. : is the shorthand for else */}
+        {/* With && if the condition is met then the part fter the 
+        && operator is returned - use two here to check two different
+        conditions*/}
+        {/* {filteredExpenses.length === 0 && <p>No expenses found.</p>}
+        {filteredExpenses.length > 0 &&
+          filteredExpenses.map((expense) => (
+            <ExpenseItem
+              key={expense.id}
+              title={expense.title}
+              amount={expense.amount}
+              date={expense.date}
+            />
+          ))} */}
+
+{/* Can add special "key" prop to any item 
+        This is why we add ID*/}
+
+        

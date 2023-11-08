@@ -27,7 +27,9 @@ export default function AuthInputs() {
           <label>Email</label>
           <input
             type="email"
-            className={emailNotValid ? 'invalid' : undefined}
+            // ? Is thie if so if email not valid apply style then True : else
+             style={{backgroundColour: emailNotValid ? '#fed2d2' : '#d1d5db'}}
+            // className={emailNotValid ? 'invalid' : undefined} // This is dynamic styling old style
             onChange={(event) => handleInputChange('email', event.target.value)}
           />
         </p>

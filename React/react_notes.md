@@ -72,6 +72,33 @@
   Presentational component = just to render some data, not to manage any state.
   Stateful component or "smart" component = actively manages state
 
+#### Section 6
+
+##### Vanilla CSS
+Adv:
+- CSS is decoupled from JSX code
+- Traditional method of writing CSS is generally known
+- CSS code can be written by someone else with only minimal access to JSX code
+
+Disadv
+- Need to know CSS
+- CSS code is nto scoped to compponents so may clash across components (Can affect JSX code stored in different components)
+- Even css imported into different files are not scoped to the components you import them into
+
+##### Inline styles
+
+Adv:
+- Quick and easy add to JSX
+- Styles only affect elements to which they are added
+
+Disadv:
+- Need to know CSS
+- Need to style every element individually
+- No seperation between CSS & JSX code
+- Alot of duplication
+
+
+
 #### Key commands 
 *npm install* gets the libraries and dependencies needed\
 *npx create-react-app "project name"* to cerate a new react app
@@ -112,5 +139,6 @@
 
 {/* Can add special "key" prop to any item 
         This is why we add ID*/}
+
 
         

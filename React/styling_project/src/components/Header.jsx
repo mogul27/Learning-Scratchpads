@@ -6,7 +6,12 @@ export default function Header() {
     <header>
       <img src={logo} alt="A canvas" />
       <h1>ReactArt</h1>
-      <p>A community of artists and art-lovers.</p>
+      {/* Use style prop for inline styling */}
+      {/* Below is normal curly brace with object inside */}
+      <p style={{
+        color: "red",
+        textAlign: 'left'
+      }}>A community of artists and art-lovers.</p>
     </header>
   );
 }
